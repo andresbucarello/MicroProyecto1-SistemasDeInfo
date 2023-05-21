@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego de Memoria: Mémoriser</title>
+</head>
+<body>
+    <header><h1>Mémoriser!</h1></header>
+    <main>
+        <section class="seccion1"></section>
+        <section class="seccion2">
+            <table>
+                <tr>
+                    <td><button id="0" onclick="revelar(0)" class="image" ></button></td>
+                    <td><button id="1" onclick="revelar(1)" class="image" ></button></td>
+                    <td><button id="2" onclick="revelar(2)" class="image"></button></td>
+                    <td><button id="3" onclick="revelar(3)" class="image"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="revelar(4)" class="image"></button></td>
+                    <td><button id="5" onclick="revelar(5)" class="image"></button></td>
+                    <td><button id="6" onclick="revelar(6)" class="image"></button></td>
+                    <td><button id="7" onclick="revelar(7)" class="image"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="revelar(8)"   class="image" ></button></td>
+                    <td><button id="9" onclick="revelar(9)"   class="image" ></button></td>
+                    <td><button id="10" onclick="revelar(10)" class="image" ></button></td>
+                    <td><button id="11" onclick="revelar(11)" class="image" ></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="revelar(12)" class="image"></button></td>
+                    <td><button id="13" onclick="revelar(13)" class="image"></button></td>
+                    <td><button id="14" onclick="revelar(14)" class="image"></button></td>
+                    <td><button id="15" onclick="revelar(15)" class="image"></button></td>
+                </tr>
+            </table>
+        </section>
+        <section class="seccion3">
+            <h2 class="tiempo" class="estadisticas">Tiempo: <span id="contadorRegresivo"></span> segundos</h2>
+            <h2 class="puntuacion" class="estadisticas">Puntuacion: <span id="puntaje">0</span> puntos</h2>
+            <button class="play">Habilitar</button>
+            <button class="reset">Reiniciar</button>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
