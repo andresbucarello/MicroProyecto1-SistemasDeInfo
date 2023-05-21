@@ -46,7 +46,7 @@ function contarTiempo() {
 function bloquear(id){
     for (let index = 0; index < 16; index++) {
         let imagen = document.getElementById(index);
-        imagen.innerHTML = `<img src="./imagenes/imagen${numeros[index]}.jpeg" alt="">`;
+        imagen.innerHTML = `<img src="./Imagenes/imagen${numeros[index]}.jpeg" alt="">`;
         imagen.disabled = true;
     }
 }
@@ -63,14 +63,14 @@ function revelar(id){
     if (imagenesDestapadas == 1){
         imagen1 = document.getElementById(id);
         primerResultado = numeros[id];
-        imagen1.innerHTML = `<img src="./imagenes/imagen${primerResultado}.jpeg" alt="">`;
+        imagen1.innerHTML = `<img src="./Imagenes/imagen${primerResultado}.jpeg" alt="">`;
         imagen1.disabled = true;
     }
     
     else if(imagenesDestapadas == 2){
         imagen2 = document.getElementById(id);
         segundoResultado = numeros[id];
-        imagen2.innerHTML = `<img src="./imagenes/imagen${segundoResultado}.jpeg" alt="">`;
+        imagen2.innerHTML = `<img src="./Imagenes/imagen${segundoResultado}.jpeg" alt="">`;
         imagen2.disabled = true;
 
         if (primerResultado==segundoResultado){
